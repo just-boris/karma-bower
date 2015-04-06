@@ -1,0 +1,31 @@
+{
+  "name": "karma-matchers-loader",
+  "version": "1.0.0",
+  "description": "Loads any type of matcher into your test scope",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "bower install",
+    "test": "karma start --single-run",
+    "dev": "karma start --no-single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/just-boris/karma-matchers-loader.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/just-boris/karma-matchers-loader/issues"
+  },
+  "homepage": "https://github.com/just-boris/karma-matchers-loader",
+  "dependencies": {
+    "bower-resolve": "^2.2.1"
+  },
+  "devDependencies": {
+    "karma": "^0.12.31",
+    "karma-cli": "0.0.4",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
+}
