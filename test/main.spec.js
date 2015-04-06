@@ -16,4 +16,10 @@ describe('matchers-loader', function() {
             toHaveClass: jasmine.any(Function)
         }));
     });
+
+    it("bem-matchers", function() {
+        expect(expect()).toEqual(jasmine.objectContaining({
+            toHaveMod: jasmine.any(Function)
+        }));
+    });
 });

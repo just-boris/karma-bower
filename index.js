@@ -11,7 +11,6 @@ function importMatchers(files, matchers) {
     var matcherFile = bowerResolve.fastReadSync(matcher);
     files.push(createPattern(matcherFile));
   });
-  console.log(files);
 }
 
 module.exports = {

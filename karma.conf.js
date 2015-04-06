@@ -12,7 +12,8 @@ module.exports = function(config) {
             'sinonjs',
             'jasmine-ajax',
             'chai',
-            'jasmine-jquery'
+            'jasmine-jquery',
+            'bem-matchers'
         ],
 
         browsers: ['Firefox', 'PhantomJS']
