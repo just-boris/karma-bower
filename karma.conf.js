@@ -2,7 +2,7 @@ module.exports = function(config) {
     config.plugins.push(require('./index.js'));
     config.set({
         basePath: '',
-        frameworks: ['jasmine', 'bower'],
+        frameworks: ['bower', 'jasmine'],
         files: [
             'test/*.js'
         ],

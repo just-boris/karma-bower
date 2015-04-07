@@ -17,7 +17,7 @@ Add into your `karma.conf.js`
 ```js
 module.exports = function(config) {
     config.set({
-        frameworks: ['bower'],
+        frameworks: ['bower', 'jasmine'],
         
         //then you can load any package from bower into your tests
         bowerPackages: [
@@ -31,7 +31,10 @@ module.exports = function(config) {
 };
 ```
 
-You can include any package that you need. The only requirement is to have it installed via bower and have 
-the `main` section in its `bower.json`. 
+You can include any package that you need. The only requirement is to have it installed 
+via bower and have the `main` section in its `bower.json`. 
+
+Also note that plugin should be included in `frameworks` section *before* you test framework
+(mocha or jasmine).
 
 [bower]: http://bower.io

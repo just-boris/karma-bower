@@ -6,9 +6,9 @@ function createPattern(path) {
 
 importMatchers.$inject = ['config.files', 'config.bowerPackages'];
 function importMatchers(files, bowerPackages) {
-  bowerPackages.forEach(function(pkg) {
+  bowerPackages.slice().reverse().forEach(function(pkg) {
     var absolutePath = bowerResolve.fastReadSync(pkg);
-    files.push(createPattern(absolutePath));
+    files.unshift(createPattern(absolutePath));
   });
 }
 
