@@ -1,4 +1,4 @@
-# karma-bower
+# karma-bower [![Build Status](https://travis-ci.org/just-boris/karma-bower.svg?branch=master)](https://travis-ci.org/just-boris/karma-bower)
 
 > Loads bower packages into your test scope. 
 
@@ -17,7 +17,7 @@ Add into your `karma.conf.js`
 ```js
 module.exports = function(config) {
     config.set({
-        frameworks: ['matchers-loader'],
+        frameworks: ['bower'],
         
         //then you can load any package from bower into your tests
         bowerPackages: [
