@@ -1,7 +1,7 @@
 {
-  "name": "karma-matchers-loader",
+  "name": "karma-bower",
   "version": "1.0.0",
-  "description": "Loads any type of matcher into your test scope",
+  "description": "Loads bower packages into your test scope",
   "main": "index.js",
   "scripts": {
     "prepublish": "bower install",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/just-boris/karma-matchers-loader.git"
+    "url": "https://github.com/just-boris/karma-bower.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/just-boris/karma-matchers-loader/issues"
+    "url": "https://github.com/just-boris/karma-bower/issues"
   },
-  "homepage": "https://github.com/just-boris/karma-matchers-loader",
+  "homepage": "https://github.com/just-boris/karma-bower",
   "dependencies": {
     "bower-resolve": "^2.2.1"
   },

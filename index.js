@@ -1,18 +1,17 @@
-var path = require('path'),
-    bowerResolve = require('bower-resolve');
+var bowerResolve = require('bower-resolve');
 
 function createPattern(path) {
   return {pattern: path, included: true, served: true, watched: false};
 }
 
-importMatchers.$inject = ['config.files', 'config.matchers'];
-function importMatchers(files, matchers) {
-  matchers.forEach(function(matcher) {
-    var matcherFile = bowerResolve.fastReadSync(matcher);
-    files.push(createPattern(matcherFile));
+importMatchers.$inject = ['config.files', 'config.bowerPackages'];
+function importMatchers(files, bowerPackages) {
+  bowerPackages.forEach(function(pkg) {
+    var absolutePath = bowerResolve.fastReadSync(pkg);
+    files.push(createPattern(absolutePath));
   });
 }
 
 module.exports = {
-  'framework:matchers-loader': ['factory', importMatchers]
+  'framework:bower': ['factory', importMatchers]
 };

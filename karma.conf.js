@@ -2,12 +2,12 @@ module.exports = function(config) {
     config.plugins.push(require('./index.js'));
     config.set({
         basePath: '',
-        frameworks: ['jasmine', 'matchers-loader'],
+        frameworks: ['jasmine', 'bower'],
         files: [
             'test/*.js'
         ],
         reporters: ['progress'],
-        matchers: [
+        bowerPackages: [
             'jquery',
             'sinonjs',
             'jasmine-ajax',
