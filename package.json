@@ -1,6 +1,6 @@
 {
   "name": "karma-bower",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loads bower packages into your test scope",
   "main": "index.js",
   "scripts": {
